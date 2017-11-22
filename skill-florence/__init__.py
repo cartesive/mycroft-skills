@@ -51,7 +51,7 @@ class MedicationCheckSkill(MycroftSkill):
 
         medication_check_start_intent = IntentBuilder("MedicationCheckStartIntent").\
             require("MedicationCheckStartKeyword").build()
-        self.register_intent(hello_world_intent,
+        self.register_intent(medication_check_start_intent,
                              self.handle_medication_check_start_intent)
 
     # The "handle_xxxx_intent" functions define Mycroft's behavior when
